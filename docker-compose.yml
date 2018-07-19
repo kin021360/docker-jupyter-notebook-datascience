@@ -1,0 +1,11 @@
+version: '2'
+services:
+  jupyter_datascience:
+    build:
+        context: ./
+        dockerfile: jupyter.Dockerfile
+    environment:
+      - GRANT_SUDO=yes
+    restart: always
+    ports:
+        - "8888:8888"
