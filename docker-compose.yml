@@ -4,6 +4,7 @@ services:
     build:
         context: ./
         dockerfile: jupyter.Dockerfile
+    shm_size: 1G
     environment:
       - GRANT_SUDO=yes
     restart: always
