@@ -2,6 +2,7 @@ FROM jupyter/datascience-notebook:latest
 MAINTAINER Nathan Lam
 
 RUN pip install graphviz
+RUN pip install librosa
 
 RUN pip install jupyter_contrib_nbextensions
 RUN jupyter contrib nbextension install --user
