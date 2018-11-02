@@ -12,5 +12,5 @@ docker-compose up
 
 Stop the container:
 ```bash
-docker-compose down
+docker-compose stop
 ```
