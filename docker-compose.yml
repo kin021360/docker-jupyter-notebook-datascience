@@ -4,6 +4,8 @@ services:
     build:
         context: ./
         dockerfile: jupyter.Dockerfile
+   # volumes:
+   #     - /home/jovyan:/home/jovyan
     shm_size: 1G
     environment:
       - GRANT_SUDO=yes
