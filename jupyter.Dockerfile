@@ -5,11 +5,12 @@ RUN pip install graphviz
 RUN pip install librosa
 
 RUN pip install jupyter_contrib_nbextensions
-RUN jupyter contrib nbextension install --user
-RUN jupyter nbextension enable codefolding/main
-RUN jupyter nbextension enable execute_time/ExecuteTime
 
 USER root
+
+RUN jupyter contrib nbextension install --system
+RUN jupyter nbextension enable codefolding/main
+RUN jupyter nbextension enable execute_time/ExecuteTime
 
 RUN apt-get update
 RUN apt-get install -y graphviz
