@@ -1,0 +1,12 @@
+version: '2.2'
+services:
+  jupyter_pyspark:
+    build:
+        context: ./
+        dockerfile: jupyter_pyspark.Dockerfile
+    shm_size: 1G
+    environment:
+      - GRANT_SUDO=yes
+    restart: always
+    ports:
+        - "8888:8888"
