@@ -10,7 +10,7 @@ services:
     environment:
       - GRANT_SUDO=yes
    #   - PASSWORD=
-    restart: always
-   # restart: on-failure
+   # restart: always
+    restart: on-failure
     ports:
         - "8888:8888"
