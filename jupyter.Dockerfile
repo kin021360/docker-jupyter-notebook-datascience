@@ -1,6 +1,7 @@
 FROM jupyter/datascience-notebook:latest
 MAINTAINER Nathan Lam
 
+RUN pip install mlxtend
 RUN pip install graphviz
 RUN pip install librosa
 RUN pip install keras
