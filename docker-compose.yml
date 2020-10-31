@@ -4,13 +4,13 @@ services:
     build:
         context: ./
         dockerfile: jupyter.Dockerfile
-   # volumes:
-   #     - /home/jovyan:/home/jovyan
+#    volumes:
+#      - /home/jovyan:/home/jovyan
     shm_size: 1G
     environment:
       - GRANT_SUDO=yes
-   #   - PASSWORD=
-   # restart: always
+#      - PASSWORD=
+#    restart: always
     restart: on-failure
     ports:
         - "8888:8888"
