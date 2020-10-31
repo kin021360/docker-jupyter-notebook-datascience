@@ -4,9 +4,12 @@ MAINTAINER Nathan Lam
 RUN pip install mlxtend
 RUN pip install graphviz
 RUN pip install librosa
-RUN pip install keras
-RUN pip install tensorflow
+
+##----------Install tensorflow if you need it----------
+# RUN pip install keras
+# RUN pip install tensorflow
 # RUN pip install tensorflow-gpu
+##-----------------------------------------------------
 
 RUN pip install jupyter_contrib_nbextensions
 
